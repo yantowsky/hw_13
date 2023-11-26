@@ -432,7 +432,8 @@
             z-index: 2;
 
             @media (min-width: 768px) {
-                display: flex !important;
+                display: flex;
+                // !important
                 margin-top: 0;
                 padding: 0;
                 background: none;

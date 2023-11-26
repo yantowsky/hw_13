@@ -4,6 +4,8 @@ let popupNav = document.getElementById("popup-nav");
 console.log(popupNav);
 let popupClose = document.getElementById("popup-close");
 console.log(popupClose);
+let menuHeader = document.getElementById("menu-header");
+console.log(menuHeader);
 
 popupClose.addEventListener("click", function () {
     popupNav.style.display = "none";
@@ -12,6 +14,15 @@ popupClose.addEventListener("click", function () {
 buttonBurger.addEventListener("click", function () {
     popupNav.style.display = "flex";
 })
+
+window.addEventListener("resize", function () {
+    if (document.documentElement.clientWidth >= 768) {
+        popupNav.style.display = "flex";
+    }
+    else {
+        popupNav.style.display = "none";
+    }
+});
 
 let uaButton = document.getElementById("button-ua");
 let enButton = document.getElementById("button-en");

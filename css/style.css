@@ -583,7 +583,7 @@ body {
 }
 @media (min-width: 768px) {
   .header .menu .popup-nav {
-    display: flex !important;
+    display: flex;
     margin-top: 0;
     padding: 0;
     background: none;
