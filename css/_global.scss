@@ -5,3 +5,22 @@ body {
     line-height: normal;
     color: #FFF;
 }
+
+.menu__link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+}
+
+.menu__link:hover {
+    color: #F0145A;
+}
+
+.menu__link:hover .menu__link-img path {
+    stroke: #F0145A;
+}
