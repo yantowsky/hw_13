@@ -179,6 +179,21 @@ body {
   stroke: #F0145A;
 }
 
+.switch {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.switch .switch__img {
+  fill: #24A3FF;
+}
+.switch #switch-dot-two {
+  opacity: 0.6;
+}
+.switch #switch-dot-three {
+  opacity: 0.2;
+}
+
 .header {
   background-color: #323264;
   display: flex;
