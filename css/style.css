@@ -1020,4 +1020,152 @@ body {
   .main .stack .stack__item--mod {
     width: 95.833%;
   }
+}
+.main .team {
+  padding: 30px 8% 60px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .main .team {
+    padding: 60px 7.813%;
+  }
+}
+@media (min-width: 1024px) {
+  .main .team {
+    padding: 60px 5.86%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .team {
+    padding: 60px 4.167%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .team {
+    padding: 60px 8.334%;
+  }
+}
+.main .team .team__body {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #F5F5FA;
+}
+.main .team .team__body .team__item {
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) {
+  .main .team .team__body .team__item {
+    flex-direction: row;
+  }
+}
+.main .team .team__body .team__item .team__photo {
+  display: flex;
+  height: 500px;
+}
+@media (min-width: 1024px) {
+  .main .team .team__body .team__item .team__photo {
+    height: auto;
+    width: 44.248%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .team .team__body .team__item .team__photo {
+    width: 30.304%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .team .team__body .team__item .team__photo {
+    width: 25%;
+  }
+}
+@media (min-width: 2560px) {
+  .main .team .team__body .team__item .team__photo {
+    width: 18.762%;
+  }
+}
+.main .team .team__body .team__item .team__photo--mod {
+  background: url("../images/team/Alexander_Alexandrovsky.svg") no-repeat center center;
+  background-size: cover;
+}
+.main .team .team__body .team__item .team__photo--spec {
+  background: url("../images/team/Oksana_Kobzar.svg") no-repeat center center;
+  background-size: cover;
+}
+.main .team .team__body .team__item .team__photo--add {
+  background: url("../images/team/Vladislav_Melnik.svg") no-repeat center center;
+  background-size: cover;
+}
+.main .team .team__body .team__item .team__info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 8%;
+}
+@media (min-width: 768px) {
+  .main .team .team__body .team__item .team__info {
+    padding: 30px 4.63%;
+  }
+}
+@media (min-width: 1024px) {
+  .main .team .team__body .team__item .team__info {
+    width: 55.753%;
+    padding: 30px 3.32%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .team .team__body .team__item .team__info {
+    width: 69.697%;
+    padding: 30px 2.273%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .team .team__body .team__item .team__info {
+    width: 75%;
+    padding: 30px 1.875%;
+  }
+}
+@media (min-width: 2560px) {
+  .main .team .team__body .team__item .team__info {
+    width: 81.238%;
+    padding: 30px 1.4065%;
+  }
+}
+.main .team .team__body .team__item .team__info .team__quote {
+  margin: 5px 0 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width: 768px) {
+  .main .team .team__body .team__item .team__info .team__quote {
+    font-size: 2.375rem;
+  }
+}
+.main .team .team__body .team__item .team__info .team__name {
+  color: #B3B3BA;
+  font-weight: 700;
+}
+.main .team .team__body .team__item .team__info .team__role {
+  margin-top: 6px;
+  color: #B3B3BA;
+  font-size: 0.875rem;
+  line-height: 22px;
+}
+.main .team .team__body #team-card-one {
+  display: flex;
+}
+.main .team .team__body #team-card-two {
+  display: none;
+}
+.main .team .team__body #team-card-three {
+  display: none;
+}
+.main .team .team__switch {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
