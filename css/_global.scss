@@ -25,18 +25,22 @@ body {
     stroke: #F0145A;
 }
 
-
 .switch {
     display: inline-flex;
     align-items: flex-start;
     gap: 15px;
 
-    .switch__img {
-        fill: #24A3FF;
+    .switch__item {
+        display: flex;
+        align-items: center;
+
+        .switch__img {
+            fill: #24A3FF;
+        }
     }
 
     #switch-dot-two {
-        opacity: 0.6;
+        opacity: 0.2;
     }
 
     #switch-dot-three {

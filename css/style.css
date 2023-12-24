@@ -184,11 +184,15 @@ body {
   align-items: flex-start;
   gap: 15px;
 }
-.switch .switch__img {
+.switch .switch__item {
+  display: flex;
+  align-items: center;
+}
+.switch .switch__item .switch__img {
   fill: #24A3FF;
 }
 .switch #switch-dot-two {
-  opacity: 0.6;
+  opacity: 0.2;
 }
 .switch #switch-dot-three {
   opacity: 0.2;
@@ -392,7 +396,6 @@ body {
   border-radius: 8px;
 }
 .header .contacts .lang .lang__item:hover {
-  background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 .header .contacts .dot-separator {

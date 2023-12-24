@@ -1,4 +1,3 @@
-// Footer
 let buttonBurger = document.getElementById("button-burger");
 console.log(buttonBurger);
 let popupNav = document.getElementById("popup-nav");
@@ -25,15 +24,6 @@ window.addEventListener("resize", function () {
     }
 });
 
-let uaButton = document.getElementById("button-ua");
-console.log(uaButton);
-let enButton = document.getElementById("button-en");
-console.log(enButton);
-let ruButton = document.getElementById("button-ru");
-console.log(ruButton);
-
-enButton.style.background = "#F0145A";
-
 let advTab_A = document.getElementById("adventages-tab-A");
 console.log(advTab_A);
 let advTab_B = document.getElementById("adventages-tab-B");
@@ -53,233 +43,196 @@ console.log(advBody_D);
 
 advTab_A.style.cursor = "initial";
 
-window.onclick = function (click) {
-    if (click.target == uaButton) {
-        uaButton.style.background = "#F0145A";
-        enButton.style.background = "none";
-        ruButton.style.background = "none";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == ruButton) {
-                ruButton.style.background = "rgba(255, 255, 255, 0.20)";
-            } else if (hoverOn.target == enButton) {
-                enButton.style.background = "rgba(255, 255, 255, 0.20)";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == ruButton) {
-                ruButton.style.background = "none";
-            } else if (hoverOff.target == enButton) {
-                enButton.style.background = "none";
-            }
-        }
-
-    } else if (click.target == ruButton) {
-        uaButton.style.background = "none";
-        enButton.style.background = "none";
-        ruButton.style.background = "#F0145A";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == uaButton) {
-                uaButton.style.background = "rgba(255, 255, 255, 0.20)";
-            } else if (hoverOn.target == enButton) {
-                enButton.style.background = "rgba(255, 255, 255, 0.20)";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == uaButton) {
-                uaButton.style.background = "none";
-            } else if (hoverOff.target == enButton) {
-                enButton.style.background = "none";
-            }
-        }
-
-    } else if (click.target == enButton) {
-        enButton.style.background = "#F0145A";
-        uaButton.style.background = "none";
-        ruButton.style.background = "none";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == uaButton) {
-                uaButton.style.background = "rgba(255, 255, 255, 0.20)";
-            } else if (hoverOn.target == ruButton) {
-                ruButton.style.background = "rgba(255, 255, 255, 0.20)";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == uaButton) {
-                uaButton.style.background = "none";
-            } else if (hoverOff.target == ruButton) {
-                ruButton.style.background = "none";
-            }
-        }
-
-    } else if (click.target == advTab_A) {
-        advTab_A.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)";
-        advTab_A.style.backgroundClip = "text";
-        advTab_A.style.webkitBackgroundClip = "text";
-        advTab_A.style.webkitTextFillColor = "transparent"
-        advTab_B.style.background = "initial";
-        advTab_B.style.webkitTextFillColor = "initial";
-        advTab_C.style.background = "initial";
-        advTab_C.style.webkitTextFillColor = "initial";
-        advTab_D.style.background = "initial";
-        advTab_D.style.webkitTextFillColor = "initial";
-        advTab_B.style.color = "#B3B3BA";
-        advTab_C.style.color = "#B3B3BA";
-        advTab_D.style.color = "#B3B3BA";
-        advBody_A.style.display = "flex";
-        advBody_B.style.display = "none";
-        advBody_C.style.display = "none";
-        advBody_D.style.display = "none";
-        advTab_A.style.cursor = "initial";
-        advTab_B.style.cursor = "pointer";
-        advTab_C.style.cursor = "pointer";
-        advTab_D.style.cursor = "pointer";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == advTab_B) {
-                advTab_B.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_C) {
-                advTab_C.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_D) {
-                advTab_D.style.color = "#F0145A";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == advTab_B) {
-                advTab_B.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_C) {
-                advTab_C.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_D) {
-                advTab_D.style.color = "#B3B3BA";
-            }
-        }
-
-    } else if (click.target == advTab_B) {
-        advTab_B.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)";
-        advTab_B.style.backgroundClip = "text";
-        advTab_B.style.webkitBackgroundClip = "text";
-        advTab_B.style.webkitTextFillColor = "transparent"
-        advTab_A.style.background = "initial";
-        advTab_A.style.webkitTextFillColor = "initial";
-        advTab_C.style.background = "initial";
-        advTab_C.style.webkitTextFillColor = "initial";
-        advTab_D.style.background = "initial";
-        advTab_D.style.webkitTextFillColor = "initial";
-        advTab_A.style.color = "#B3B3BA";
-        advTab_C.style.color = "#B3B3BA";
-        advTab_D.style.color = "#B3B3BA";
-        advBody_A.style.display = "none";
-        advBody_B.style.display = "flex";
-        advBody_C.style.display = "none";
-        advBody_D.style.display = "none";
-        advTab_A.style.cursor = "pointer";
-        advTab_B.style.cursor = "initial";
-        advTab_C.style.cursor = "pointer";
-        advTab_D.style.cursor = "pointer";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == advTab_A) {
-                advTab_A.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_C) {
-                advTab_C.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_D) {
-                advTab_D.style.color = "#F0145A";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == advTab_A) {
-                advTab_A.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_C) {
-                advTab_C.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_D) {
-                advTab_D.style.color = "#B3B3BA";
-            }
-        }
-
-    } else if (click.target == advTab_C) {
-        advTab_C.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)";
-        advTab_C.style.backgroundClip = "text";
-        advTab_C.style.webkitBackgroundClip = "text";
-        advTab_C.style.webkitTextFillColor = "transparent"
-        advTab_A.style.background = "initial";
-        advTab_A.style.webkitTextFillColor = "initial";
-        advTab_B.style.background = "initial";
-        advTab_B.style.webkitTextFillColor = "initial";
-        advTab_D.style.background = "initial";
-        advTab_D.style.webkitTextFillColor = "initial";
-        advTab_A.style.color = "#B3B3BA";
-        advTab_B.style.color = "#B3B3BA";
-        advTab_D.style.color = "#B3B3BA";
-        advBody_A.style.display = "none";
-        advBody_B.style.display = "none";
-        advBody_C.style.display = "flex";
-        advBody_D.style.display = "none";
-        advTab_A.style.cursor = "pointer";
-        advTab_B.style.cursor = "pointer";
-        advTab_C.style.cursor = "initial";
-        advTab_D.style.cursor = "pointer";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == advTab_A) {
-                advTab_A.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_B) {
-                advTab_B.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_D) {
-                advTab_D.style.color = "#F0145A";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == advTab_A) {
-                advTab_A.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_B) {
-                advTab_B.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_D) {
-                advTab_D.style.color = "#B3B3BA";
-            }
-        }
-
-    } else if (click.target == advTab_D) {
-        advTab_D.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)";
-        advTab_D.style.backgroundClip = "text";
-        advTab_D.style.webkitBackgroundClip = "text";
-        advTab_D.style.webkitTextFillColor = "transparent"
-        advTab_A.style.background = "initial";
-        advTab_A.style.webkitTextFillColor = "initial";
-        advTab_B.style.background = "initial";
-        advTab_B.style.webkitTextFillColor = "initial";
-        advTab_C.style.background = "initial";
-        advTab_C.style.webkitTextFillColor = "initial";
-        advTab_A.style.color = "#B3B3BA";
-        advTab_B.style.color = "#B3B3BA";
-        advTab_C.style.color = "#B3B3BA";
-        advBody_A.style.display = "none";
-        advBody_B.style.display = "none";
-        advBody_C.style.display = "none";
-        advBody_D.style.display = "flex";
-        advTab_A.style.cursor = "pointer";
-        advTab_B.style.cursor = "pointer";
-        advTab_C.style.cursor = "pointer";
-        advTab_D.style.cursor = "initial";
-
-        window.onmouseover = function (hoverOn) {
-            if (hoverOn.target == advTab_A) {
-                advTab_A.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_B) {
-                advTab_B.style.color = "#F0145A";
-            } else if (hoverOn.target == advTab_C) {
-                advTab_C.style.color = "#F0145A";
-            }
-        }
-        window.onmouseout = function (hoverOff) {
-            if (hoverOff.target == advTab_A) {
-                advTab_A.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_B) {
-                advTab_B.style.color = "#B3B3BA";
-            } else if (hoverOff.target == advTab_C) {
-                advTab_C.style.color = "#B3B3BA";
-            }
+function getClickTab(tab, body) {
+    tab.onclick = function () {
+        tab.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)";
+        tab.style.backgroundClip = "text";
+        tab.style.webkitBackgroundClip = "text";
+        tab.style.webkitTextFillColor = "transparent";
+        tab.style.cursor = "initial";
+        body.style.display = "flex";
+        if (tab == advTab_A && body == advBody_A) {
+            advTab_B.style.background = "initial";
+            advTab_B.style.webkitTextFillColor = "initial";
+            advTab_C.style.background = "initial";
+            advTab_C.style.webkitTextFillColor = "initial";
+            advTab_D.style.background = "initial";
+            advTab_D.style.webkitTextFillColor = "initial";
+            advTab_B.style.color = "#B3B3BA";
+            advTab_C.style.color = "#B3B3BA";
+            advTab_D.style.color = "#B3B3BA";
+            advBody_B.style.display = "none";
+            advBody_C.style.display = "none";
+            advBody_D.style.display = "none";
+            advTab_B.style.cursor = "pointer";
+            advTab_C.style.cursor = "pointer";
+            advTab_D.style.cursor = "pointer";
+        } else if (tab == advTab_B && body == advBody_B) {
+            advTab_A.style.background = "initial";
+            advTab_A.style.webkitTextFillColor = "initial";
+            advTab_C.style.background = "initial";
+            advTab_C.style.webkitTextFillColor = "initial";
+            advTab_D.style.background = "initial";
+            advTab_D.style.webkitTextFillColor = "initial";
+            advTab_A.style.color = "#B3B3BA";
+            advTab_C.style.color = "#B3B3BA";
+            advTab_D.style.color = "#B3B3BA";
+            advBody_A.style.display = "none";
+            advBody_C.style.display = "none";
+            advBody_D.style.display = "none";
+            advTab_A.style.cursor = "pointer";
+            advTab_C.style.cursor = "pointer";
+            advTab_D.style.cursor = "pointer";
+        } else if (tab == advTab_C && body == advBody_C) {
+            advTab_A.style.background = "initial";
+            advTab_A.style.webkitTextFillColor = "initial";
+            advTab_B.style.background = "initial";
+            advTab_B.style.webkitTextFillColor = "initial";
+            advTab_D.style.background = "initial";
+            advTab_D.style.webkitTextFillColor = "initial";
+            advTab_A.style.color = "#B3B3BA";
+            advTab_B.style.color = "#B3B3BA";
+            advTab_D.style.color = "#B3B3BA";
+            advBody_A.style.display = "none";
+            advBody_B.style.display = "none";
+            advBody_D.style.display = "none";
+            advTab_A.style.cursor = "pointer";
+            advTab_B.style.cursor = "pointer";
+            advTab_D.style.cursor = "pointer";
+        } else if (tab == advTab_D && body == advBody_D) {
+            advTab_A.style.background = "initial";
+            advTab_A.style.webkitTextFillColor = "initial";
+            advTab_B.style.background = "initial";
+            advTab_B.style.webkitTextFillColor = "initial";
+            advTab_C.style.background = "initial";
+            advTab_C.style.webkitTextFillColor = "initial";
+            advTab_A.style.color = "#B3B3BA";
+            advTab_B.style.color = "#B3B3BA";
+            advTab_C.style.color = "#B3B3BA";
+            advBody_A.style.display = "none";
+            advBody_B.style.display = "none";
+            advBody_C.style.display = "none";
+            advTab_A.style.cursor = "pointer";
+            advTab_C.style.cursor = "pointer";
+            advTab_B.style.cursor = "pointer";
         }
     }
+    tab.onmouseover = function () {
+        (tab.style.cursor == "initial" && body.style.display == "flex") ? (
+            tab.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)",
+            tab.style.backgroundClip = "text",
+            tab.style.webkitBackgroundClip = "text",
+            tab.style.webkitTextFillColor = "transparent"
+        ) : tab.style.color = "#F0145A"
+    }
+    tab.onmouseout = function () {
+        (tab.style.cursor == "initial" && body.style.display == "flex") ? (
+            tab.style.background = "linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%)",
+            tab.style.backgroundClip = "text",
+            tab.style.webkitBackgroundClip = "text",
+            tab.style.webkitTextFillColor = "transparent"
+        ) : tab.style.color = "#B3B3BA"
+    }
 }
+
+getClickTab(advTab_A, advBody_A);
+getClickTab(advTab_B, advBody_B);
+getClickTab(advTab_C, advBody_C);
+getClickTab(advTab_D, advBody_D);
+
+let uaButton = document.getElementById("button-ua");
+console.log(uaButton);
+let enButton = document.getElementById("button-en");
+console.log(enButton);
+let ruButton = document.getElementById("button-ru");
+console.log(ruButton);
+
+enButton.style.background = "#F0145A";
+enButton.style.cursor = "default"
+
+function getClickLang(lang) {
+    lang.onclick = function () {
+        lang.style.background = "#F0145A";
+        lang.style.cursor = "default";
+        if (lang == uaButton) {
+            enButton.style.background = "none";
+            ruButton.style.background = "none";
+            enButton.style.cursor = "pointer";
+            ruButton.style.cursor = "pointer";
+        } else if (lang == enButton) {
+            uaButton.style.background = "none";
+            ruButton.style.background = "none";
+            uaButton.style.cursor = "pointer";
+            ruButton.style.cursor = "pointer";
+        } else if (lang == ruButton) {
+            uaButton.style.background = "none";
+            enButton.style.background = "none";
+            uaButton.style.cursor = "pointer";
+            enButton.style.cursor = "pointer";
+        }
+    }
+    lang.onmouseover = function () {
+        (lang.style.cursor == "default" || lang.style.background == "#F0145A") ? lang.style.background = "#F0145A" : lang.style.background = "rgba(255, 255, 255, 0.20)";
+    }
+    lang.onmouseout = function () {
+        (lang.style.cursor == "default" || lang.style.background == "#F0145A") ? lang.style.background == "#F0145A" : lang.style.background = "none";
+    }
+}
+
+getClickLang(uaButton);
+getClickLang(enButton);
+getClickLang(ruButton);
+
+let oneDot = document.getElementById("switch-dot-one");
+console.log(oneDot);
+let twoDot = document.getElementById("switch-dot-two");
+console.log(twoDot);
+let threeDot = document.getElementById("switch-dot-three");
+console.log(threeDot);
+
+let oneTeam = document.getElementById("team-card-one");
+console.log(oneTeam);
+let twoTeam = document.getElementById("team-card-two");
+console.log(twoTeam);
+let threeTeam = document.getElementById("team-card-three");
+console.log(threeTeam);
+
+oneDot.style.opacity = 1;
+oneDot.style.cursor = "default";
+
+function getClickDot(dot, team) {
+    dot.onclick = function () {
+        dot.style.opacity = 1;
+        dot.style.cursor = "default";
+        team.style.display = "flex"
+        if (dot == oneDot && team == oneTeam) {
+            twoTeam.style.display = "none";
+            threeTeam.style.display = "none";
+            twoDot.style.opacity = 0.2;
+            threeDot.style.opacity = 0.2;
+        } else if (dot == twoDot && team == twoTeam) {
+            oneTeam.style.display = "none";
+            threeTeam.style.display = "none";
+            oneDot.style.opacity = 0.2;
+            threeDot.style.opacity = 0.2;
+        } else if (dot == threeDot && team == threeTeam) {
+            oneTeam.style.display = "none";
+            twoTeam.style.display = "none";
+            oneDot.style.opacity = 0.2;
+            twoDot.style.opacity = 0.2;
+        }
+    }
+    dot.onmouseover = function () {
+        (team.style.display == "flex" || dot.style.opacity == 1) ? dot.style.opacity = 1 : (
+            dot.style.opacity = 0.6,
+            dot.style.cursor = "pointer"
+        );
+    }
+    dot.onmouseout = function () {
+        (team.style.display == "flex" || dot.style.opacity == 1) ? dot.style.opacity = 1 : dot.style.opacity = 0.2;
+    }
+}
+
+getClickDot(oneDot, oneTeam);
+getClickDot(twoDot, twoTeam);
+getClickDot(threeDot, threeTeam);
