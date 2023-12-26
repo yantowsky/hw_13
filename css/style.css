@@ -1171,4 +1171,68 @@ body {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+.main .clients .clients__heading {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.main .clients .clients__heading .clients__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+.main .clients .clients__wrap {
+  height: 720px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.main .clients .clients__wrap .clients__item {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .clients .clients__wrap .clients__item .clients__link {
+  text-align: center;
+}
+.main .clients .clients__wrap #hillel {
+  background: #1C4280;
+}
+.main .clients .clients__wrap #hillel .clients__img {
+  width: 57.87%;
+}
+.main .clients .clients__wrap #wannabiz {
+  background: #143646;
+}
+.main .clients .clients__wrap #tapgerine {
+  background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+}
+.main .clients .clients__wrap #threedlook {
+  background: #9E4DC3;
+}
+.main .clients .clients__wrap #orangear {
+  background: #FD9339;
+}
+.main .clients .clients__wrap #adtelligent {
+  background: #E2E2E4;
+}
+.main .clients .clients__wrap #clickky {
+  background: #C71C36;
+}
+.main .clients .clients__wrap #eco-leasing {
+  background: #DCF3F9;
+}
+.main .clients .clients__wrap #infratek {
+  background: #EAEAEA;
+}
+.main .clients .clients__wrap #city-par {
+  background: #282240;
+}
+.main .clients .clients__wrap #artprint {
+  background: #1D4568;
+}
+.main .clients .clients__wrap #ultimatecard {
+  background: #000;
 }/*# sourceMappingURL=style.css.map */

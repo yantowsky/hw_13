@@ -427,16 +427,13 @@
 
             #team-card-one {
                 display: flex;
-                // display: none;
             }
 
             #team-card-two {
-                // display: flex;
                 display: none;
             }
 
             #team-card-three {
-                // display: flex;
                 display: none;
             }
         }
@@ -446,6 +443,92 @@
             margin-top: 30px;
             display: flex;
             justify-content: center;
+        }
+    }
+
+    .clients {
+
+        .clients__heading {
+            text-align: center;
+            padding-bottom: 30px;
+
+            .clients__title {
+                font-size: 0.875rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #323264;
+            }
+
+        }
+
+        .clients__wrap {
+            height: 720px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+
+            .clients__item {
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .clients__link {
+                    text-align: center;
+                }
+            }
+
+            #hillel {
+                background: #1C4280;
+
+                .clients__img {
+                    width: 57.87%;
+                }
+            }
+
+            #wannabiz {
+                background: #143646;
+            }
+
+            #tapgerine {
+                background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+            }
+
+            #threedlook {
+                background: #9E4DC3;
+            }
+
+            #orangear {
+                background: #FD9339;
+            }
+
+            #adtelligent {
+                background: #E2E2E4;
+            }
+
+            #clickky {
+                background: #C71C36;
+            }
+
+            #eco-leasing {
+                background: #DCF3F9;
+            }
+
+            #infratek {
+                background: #EAEAEA;
+            }
+
+            #city-par {
+                background: #282240;
+            }
+
+            #artprint {
+                background: #1D4568;
+            }
+
+            #ultimatecard {
+                background: #000;
+            }
         }
     }
 }
