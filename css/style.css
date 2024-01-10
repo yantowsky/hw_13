@@ -1172,6 +1172,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1920px) {
+  .main .clients {
+    padding: 0 5.209%;
+  }
+}
 .main .clients .clients__heading {
   text-align: center;
   padding-bottom: 30px;
@@ -1185,8 +1190,26 @@ body {
 }
 .main .clients .clients__wrap {
   height: 720px;
-  overflow-y: scroll;
+  overflow: scroll;
   scroll-behavior: smooth;
+}
+@media (min-width: 768px) {
+  .main .clients .clients__wrap {
+    height: initial;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .main .clients .clients__wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1920px) {
+  .main .clients .clients__wrap {
+    border-radius: 12px;
+  }
 }
 .main .clients .clients__wrap .clients__item {
   height: 120px;
@@ -1199,40 +1222,199 @@ body {
 }
 .main .clients .clients__wrap #hillel {
   background: #1C4280;
+  transition: 1s;
 }
 .main .clients .clients__wrap #hillel .clients__img {
-  width: 57.87%;
+  height: 48px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #hillel:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #hillel:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #wannabiz {
   background: #143646;
+  transition: 1s;
+}
+.main .clients .clients__wrap #wannabiz .clients__img {
+  height: 32px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #wannabiz:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #wannabiz:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #tapgerine {
   background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+  transition: 1s;
+}
+.main .clients .clients__wrap #tapgerine .clients__img {
+  height: 44px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #tapgerine:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #tapgerine:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #threedlook {
   background: #9E4DC3;
+  transition: 1s;
+}
+.main .clients .clients__wrap #threedlook .clients__img {
+  height: 42px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #threedlook:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #threedlook:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #orangear {
   background: #FD9339;
+  transition: 1s;
+}
+.main .clients .clients__wrap #orangear .clients__img {
+  height: 44px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #orangear:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #orangear:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #adtelligent {
   background: #E2E2E4;
+  transition: 1s;
+}
+.main .clients .clients__wrap #adtelligent .clients__img {
+  height: 48px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #adtelligent:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #adtelligent:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #clickky {
   background: #C71C36;
+  transition: 1s;
+}
+.main .clients .clients__wrap #clickky .clients__img {
+  height: 61px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #clickky:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #clickky:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #eco-leasing {
   background: #DCF3F9;
+  transition: 1s;
+}
+.main .clients .clients__wrap #eco-leasing .clients__img {
+  height: 76px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #eco-leasing:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #eco-leasing:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #infratek {
   background: #EAEAEA;
+  transition: 1s;
+}
+.main .clients .clients__wrap #infratek .clients__img {
+  height: 60px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #infratek:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #infratek:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #city-par {
   background: #282240;
+  transition: 1s;
+}
+.main .clients .clients__wrap #city-par .clients__img {
+  height: 38px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #city-par:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #city-par:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #artprint {
   background: #1D4568;
+  transition: 1s;
+}
+.main .clients .clients__wrap #artprint .clients__img {
+  height: 46px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #artprint:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #artprint:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .main .clients .clients__wrap #ultimatecard {
   background: #000;
+  transition: 1s;
+}
+.main .clients .clients__wrap #ultimatecard .clients__img {
+  height: 95px;
+  transition: 1s;
+}
+.main .clients .clients__wrap #ultimatecard:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.main .clients .clients__wrap #ultimatecard:hover .clients__img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.main .clients .clients__wrap::-webkit-scrollbar {
+  width: 0;
+}
+.main .clients .clients__wrap {
+  -ms-overflow-style: none;
 }/*# sourceMappingURL=style.css.map */

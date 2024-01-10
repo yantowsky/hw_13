@@ -1,5 +1,4 @@
 .main {
-
     .adventages {
         width: 100%;
         display: flex;
@@ -447,6 +446,9 @@
     }
 
     .clients {
+        @media (min-width: 1920px) {
+            padding: 0 5.209%;
+        }
 
         .clients__heading {
             text-align: center;
@@ -464,8 +466,23 @@
 
         .clients__wrap {
             height: 720px;
-            overflow-y: scroll;
+            overflow: scroll;
             scroll-behavior: smooth;
+
+            @media (min-width: 768px) {
+                height: initial;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @media (min-width: 1920px) {
+                border-radius: 12px;
+            }
 
             .clients__item {
                 height: 120px;
@@ -480,55 +497,254 @@
 
             #hillel {
                 background: #1C4280;
+                transition: 1s;
 
                 .clients__img {
-                    width: 57.87%;
+                    height: 48px;
+                    transition: 1s;
                 }
             }
 
+            #hillel:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #hillel:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
+
             #wannabiz {
                 background: #143646;
+                transition: 1s;
+
+                .clients__img {
+                    height: 32px;
+                    transition: 1s;
+                }
             }
+
+            #wannabiz:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #wannabiz:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
 
             #tapgerine {
                 background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+                transition: 1s;
+
+                .clients__img {
+                    height: 44px;
+                    transition: 1s;
+                }
+            }
+
+            #tapgerine:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #tapgerine:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #threedlook {
                 background: #9E4DC3;
+                transition: 1s;
+
+                .clients__img {
+                    height: 42px;
+                    transition: 1s;
+                }
             }
+
+            #threedlook:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #threedlook:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+
 
             #orangear {
                 background: #FD9339;
+                transition: 1s;
+
+                .clients__img {
+                    height: 44px;
+                    transition: 1s;
+                }
+            }
+
+            #orangear:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #orangear:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #adtelligent {
                 background: #E2E2E4;
+                transition: 1s;
+
+                .clients__img {
+                    height: 48px;
+                    transition: 1s;
+                }
+            }
+
+            #adtelligent:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #adtelligent:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #clickky {
                 background: #C71C36;
+                transition: 1s;
+
+                .clients__img {
+                    height: 61px;
+                    transition: 1s;
+                }
+            }
+
+            #clickky:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #clickky:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #eco-leasing {
                 background: #DCF3F9;
+                transition: 1s;
+
+                .clients__img {
+                    height: 76px;
+                    transition: 1s;
+                }
+            }
+
+            #eco-leasing:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #eco-leasing:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #infratek {
                 background: #EAEAEA;
+                transition: 1s;
+
+                .clients__img {
+                    height: 60px;
+                    transition: 1s;
+                }
+            }
+
+            #infratek:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #infratek:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #city-par {
                 background: #282240;
+                transition: 1s;
+
+                .clients__img {
+                    height: 38px;
+                    transition: 1s;
+                }
+            }
+
+            #city-par:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #city-par:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #artprint {
                 background: #1D4568;
+                transition: 1s;
+
+                .clients__img {
+                    height: 46px;
+                    transition: 1s;
+                }
+            }
+
+            #artprint:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #artprint:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
             }
 
             #ultimatecard {
                 background: #000;
+                transition: 1s;
+
+                .clients__img {
+                    height: 95px;
+                    transition: 1s;
+                }
             }
+
+            #ultimatecard:hover {
+                transition: 0.5s;
+                opacity: 0.8;
+            }
+
+            #ultimatecard:hover .clients__img {
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+
+        .clients__wrap::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .clients__wrap {
+            -ms-overflow-style: none;
         }
     }
 }
