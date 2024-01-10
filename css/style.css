@@ -1190,8 +1190,7 @@ body {
 }
 .main .clients .clients__wrap {
   height: 720px;
-  overflow: scroll;
-  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 @media (min-width: 768px) {
   .main .clients .clients__wrap {
