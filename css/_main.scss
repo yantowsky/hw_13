@@ -155,7 +155,6 @@
         align-self: stretch;
         padding: 0px 8% 60px;
         gap: 30px;
-        // background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
         background: #323264;
         border-radius: 0px 0px 12px 12px;
 
@@ -180,19 +179,6 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-
-            .services__title {
-                background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 1.875rem;
-                font-weight: 700;
-
-                @media (min-width: 768px) {
-                    font-size: 2.375rem;
-                }
-            }
         }
 
         .services__body {
@@ -398,16 +384,6 @@
 
                     .team__quote {
                         margin: 5px 0 30px;
-                        font-size: 1.875rem;
-                        font-weight: 700;
-                        background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-
-                        @media (min-width: 768px) {
-                            font-size: 2.375rem;
-                        }
                     }
 
                     .team__name {
@@ -744,6 +720,162 @@
 
         .clients__wrap {
             -ms-overflow-style: none;
+        }
+    }
+
+    .publications {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 8%;
+        gap: 30px;
+        background: #F5F5FA;
+
+        @media (min-width: 768px) {
+            padding: 30px 7.813%;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 30px 5.86%;
+        }
+
+        @media (min-width: 1440px) {
+            padding: 30px 4.167%;
+        }
+
+        @media (min-width: 1920px) {
+            margin-top: 60px;
+            padding: 30px 8.334%;
+        }
+
+        .publications__heading {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            @media (min-width: 768px) {
+                gap: 10px;
+            }
+        }
+
+        .publications__body {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-areas:
+                    "A B"
+                    "C C";
+            }
+
+            @media (min-width: 1024px) {
+                grid-template-areas:
+                    "A B C";
+            }
+
+            .publications__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                border-radius: 8px;
+                overflow: hidden;
+
+                .publications__cover {
+                    height: 200px;
+                }
+
+                .publications__cover--mod {
+                    background: url("../images/publications/meeting.png") no-repeat center center;
+                    background-size: cover;
+                }
+
+                .publications__cover--spec {
+                    background: url("../images/publications/gdpr.png") no-repeat center center;
+                    background-size: cover;
+                }
+
+                .publications__cover--add {
+                    background: url("../images/publications/team.png") no-repeat center center;
+                    background-size: cover;
+                }
+
+                .publications__info {
+                    padding: 30px 9.525%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    background: #FFF;
+                    flex-grow: 1;
+
+                    @media (min-width: 768px) {
+                        padding: 30px 9.71%;
+                    }
+
+                    @media (min-width: 1024px) {
+                        padding: 30px 10.665%;
+                    }
+
+                    @media (min-width: 1440px) {
+                        padding: 30px 7.145%;
+                    }
+
+                    @media (min-width: 1920px) {
+                        padding: 30px 5.845%;
+                    }
+
+                    .publications__subtitle {
+                        color: #24A3FF;
+                        font-weight: 700;
+                    }
+
+                    .publications__date {
+                        color: #B3B3BA;
+                        font-size: 0.75rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    .publications__text {
+                        padding-top: 15px;
+                        border-top: 4px solid #E6E6F0;
+                        color: #000;
+                        font-size: 0.875rem;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .publications__item--mod {
+                grid-area: A;
+            }
+
+            .publications__item--spec {
+                grid-area: B;
+            }
+
+            .publications__item--add {
+                grid-area: C;
+
+                .publications__info {
+                    @media (min-width: 768px) {
+                        padding: 30px 4.63%;
+                    }
+
+                    @media (min-width: 1024px) {
+                        padding: 30px 10.665%;
+                    }
+
+                    @media (min-width: 1440px) {
+                        padding: 30px 7.145%;
+                    }
+
+                    @media (min-width: 1920px) {
+                        padding: 30px 5.845%;
+                    }
+                }
+            }
         }
     }
 }

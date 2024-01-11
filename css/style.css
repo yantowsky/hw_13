@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html,
 body,
 div,
@@ -143,14 +144,6 @@ table {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat.eot");
-  src: url("../fonts/Montserrat/Montserrat.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat.woff") format("woff"), url("../fonts/Montserrat/Montserrat.ttf") format("truetype"), url("../fonts/Montserrat/Montserrat.svg#Montserrat") format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -196,6 +189,24 @@ body {
 }
 .switch #switch-dot-three {
   opacity: 0.2;
+}
+
+.services__title,
+.team__quote,
+.publications__title {
+  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .services__title,
+  .team__quote,
+  .publications__title {
+    font-size: 2.375rem;
+  }
 }
 
 .header {
@@ -910,19 +921,6 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.main .services .services__heading .services__title {
-  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.875rem;
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-  .main .services .services__heading .services__title {
-    font-size: 2.375rem;
-  }
-}
 .main .services .services__body {
   display: flex;
   flex-direction: column;
@@ -1135,17 +1133,6 @@ body {
 }
 .main .team .team__body .team__item .team__info .team__quote {
   margin: 5px 0 30px;
-  font-size: 1.875rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (min-width: 768px) {
-  .main .team .team__body .team__item .team__info .team__quote {
-    font-size: 2.375rem;
-  }
 }
 .main .team .team__body .team__item .team__info .team__name {
   color: #B3B3BA;
@@ -1416,4 +1403,155 @@ body {
 }
 .main .clients .clients__wrap {
   -ms-overflow-style: none;
+}
+.main .publications {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 8%;
+  gap: 30px;
+  background: #F5F5FA;
+}
+@media (min-width: 768px) {
+  .main .publications {
+    padding: 30px 7.813%;
+  }
+}
+@media (min-width: 1024px) {
+  .main .publications {
+    padding: 30px 5.86%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .publications {
+    padding: 30px 4.167%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .publications {
+    margin-top: 60px;
+    padding: 30px 8.334%;
+  }
+}
+.main .publications .publications__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .main .publications .publications__heading {
+    gap: 10px;
+  }
+}
+.main .publications .publications__body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .main .publications .publications__body {
+    display: grid;
+    grid-template-areas: "A B" "C C";
+  }
+}
+@media (min-width: 1024px) {
+  .main .publications .publications__body {
+    grid-template-areas: "A B C";
+  }
+}
+.main .publications .publications__body .publications__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main .publications .publications__body .publications__item .publications__cover {
+  height: 200px;
+}
+.main .publications .publications__body .publications__item .publications__cover--mod {
+  background: url("../images/publications/meeting.png") no-repeat center center;
+  background-size: cover;
+}
+.main .publications .publications__body .publications__item .publications__cover--spec {
+  background: url("../images/publications/gdpr.png") no-repeat center center;
+  background-size: cover;
+}
+.main .publications .publications__body .publications__item .publications__cover--add {
+  background: url("../images/publications/team.png") no-repeat center center;
+  background-size: cover;
+}
+.main .publications .publications__body .publications__item .publications__info {
+  padding: 30px 9.525%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #FFF;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .main .publications .publications__body .publications__item .publications__info {
+    padding: 30px 9.71%;
+  }
+}
+@media (min-width: 1024px) {
+  .main .publications .publications__body .publications__item .publications__info {
+    padding: 30px 10.665%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .publications .publications__body .publications__item .publications__info {
+    padding: 30px 7.145%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .publications .publications__body .publications__item .publications__info {
+    padding: 30px 5.845%;
+  }
+}
+.main .publications .publications__body .publications__item .publications__info .publications__subtitle {
+  color: #24A3FF;
+  font-weight: 700;
+}
+.main .publications .publications__body .publications__item .publications__info .publications__date {
+  color: #B3B3BA;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main .publications .publications__body .publications__item .publications__info .publications__text {
+  padding-top: 15px;
+  border-top: 4px solid #E6E6F0;
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 22px;
+}
+.main .publications .publications__body .publications__item--mod {
+  grid-area: A;
+}
+.main .publications .publications__body .publications__item--spec {
+  grid-area: B;
+}
+.main .publications .publications__body .publications__item--add {
+  grid-area: C;
+}
+@media (min-width: 768px) {
+  .main .publications .publications__body .publications__item--add .publications__info {
+    padding: 30px 4.63%;
+  }
+}
+@media (min-width: 1024px) {
+  .main .publications .publications__body .publications__item--add .publications__info {
+    padding: 30px 10.665%;
+  }
+}
+@media (min-width: 1440px) {
+  .main .publications .publications__body .publications__item--add .publications__info {
+    padding: 30px 7.145%;
+  }
+}
+@media (min-width: 1920px) {
+  .main .publications .publications__body .publications__item--add .publications__info {
+    padding: 30px 5.845%;
+  }
 }/*# sourceMappingURL=style.css.map */
