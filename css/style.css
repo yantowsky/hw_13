@@ -328,25 +328,21 @@ body {
 .header .banner .button-scroll:hover {
   cursor: pointer;
 }
-@media (min-width: 768px) {
-  .header .banner .button-scroll:hover .button-scroll__img circle {
-    stroke: #F0145A;
-  }
+.header .banner .button-scroll:hover .button-scroll__img circle {
+  stroke: #F0145A;
 }
-@media (min-width: 768px) {
-  .header .banner .button-scroll:hover .button-scroll__img path {
-    stroke: #F0145A;
-  }
+.header .banner .button-scroll:hover .button-scroll__img path {
+  stroke: #F0145A;
 }
 .header .banner .button-scroll:active {
-  transform: scale(0.9) translateY(20px);
+  transform: scale(0.9) translateY(10px);
   transition: 0.3s;
 }
 .header .banner .button-scroll:active .button-scroll__img circle {
-  stroke: #F0145A;
+  stroke: #E6E6F0;
 }
 .header .banner .button-scroll:active .button-scroll__img path {
-  stroke: #F0145A;
+  stroke: #E6E6F0;
 }
 .header .contacts {
   width: 100%;
@@ -441,16 +437,12 @@ body {
 .header .contacts .call .call__link {
   color: #FFF;
 }
-@media (min-width: 768px) {
-  .header .contacts .call:hover {
-    transform: rotateY(360deg);
-    transition: 1.5s;
-  }
+.header .contacts .call:hover {
+  transform: rotateY(360deg);
+  transition: 1.5s;
 }
-@media (min-width: 768px) {
-  .header .contacts .call:hover .call__link {
-    color: #B3B3BA;
-  }
+.header .contacts .call:hover .call__link {
+  color: #B3B3BA;
 }
 .header .contacts .call:active .call__link {
   color: #F0145A;
@@ -536,17 +528,13 @@ body {
     height: 10px;
   }
 }
-@media (min-width: 768px) {
-  .header .logotype .logo .logo__item:hover {
-    transform: rotateX(360deg);
-    transition: 1.5s;
-  }
+.header .logotype .logo .logo__item:hover {
+  transform: rotateX(360deg);
+  transition: 1.5s;
 }
-@media (min-width: 768px) {
-  .header .logotype .logo .logo__item--mod:hover {
-    transform: rotateY(360deg);
-    transition: 1.5s;
-  }
+.header .logotype .logo .logo__item--mod:hover {
+  transform: rotateY(360deg);
+  transition: 1.5s;
 }
 .header .logotype .slash {
   display: flex;
@@ -1554,4 +1542,144 @@ body {
   .main .publications .publications__body .publications__item--add .publications__info {
     padding: 30px 5.845%;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 8% 30px;
+  background: #F5F5FA;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 30px 7.813%;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding: 30px 5.86%;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    padding: 30px 4.167%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer {
+    padding: 30px 8.334%;
+  }
+}
+.footer .contacts {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  border-top: 2px solid #E6E6F0;
+}
+.footer .contacts .contacts__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .footer .contacts .contacts__wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.footer .contacts .contacts__wrap .address {
+  color: #323264;
+}
+.footer .contacts .contacts__wrap .address:hover {
+  color: #B3B3BA;
+}
+.footer .contacts .contacts__wrap .dot-separator {
+  display: none;
+}
+@media (min-width: 768px) {
+  .footer .contacts .contacts__wrap .dot-separator {
+    display: flex;
+  }
+}
+.footer .contacts .contacts__wrap .location {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer .contacts .contacts__wrap .location .location__link {
+  color: #24A3FF;
+}
+.footer .contacts .contacts__wrap .location .location__link:hover {
+  color: #F0145A;
+}
+.footer .contacts .contacts__wrap .social-network {
+  display: flex;
+  justify-content: center;
+}
+.footer .contacts .contacts__wrap .social-network:hover path {
+  fill: #F0145A;
+}
+.footer .contacts .contacts__wrap .social-network__img {
+  transform: rotate(-360deg);
+  transition: 1.5s;
+}
+.footer .contacts .contacts__wrap .social-network__img:hover {
+  transform: rotate(360deg);
+  transition: 1.5s;
+}
+.footer .contacts .contacts__wrap .call {
+  font-weight: 700;
+}
+.footer .contacts .contacts__wrap .call .call__link {
+  color: #46466E;
+}
+.footer .contacts .contacts__wrap .call:hover {
+  transform: rotateY(360deg);
+  transition: 1.5s;
+}
+.footer .contacts .contacts__wrap .call:active .call__link {
+  color: #F0145A;
+}
+.footer .contacts .contacts__wrap .mail {
+  font-weight: 700;
+}
+.footer .contacts .contacts__wrap .mail .mail__link {
+  color: #24A3FF;
+}
+.footer .contacts .contacts__wrap .mail .mail__link:hover {
+  color: #F0145A;
+}
+.footer .policy {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .footer .policy {
+    position: absolute;
+    padding-top: 32px;
+    right: 7.813%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .policy {
+    right: 5.86%;
+  }
+}
+@media (min-width: 1440px) {
+  .footer .policy {
+    right: 4.167%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer .policy {
+    right: 8.334%;
+  }
+}
+.footer .policy .policy__text {
+  color: #B3B3BA;
 }/*# sourceMappingURL=style.css.map */

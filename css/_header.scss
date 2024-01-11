@@ -112,28 +112,24 @@
         }
 
         .button-scroll:hover .button-scroll__img circle {
-            @media (min-width: 768px) {
-                stroke: #F0145A;
-            }
+            stroke: #F0145A;
         }
 
         .button-scroll:hover .button-scroll__img path {
-            @media (min-width: 768px) {
-                stroke: #F0145A;
-            }
+            stroke: #F0145A;
         }
 
         .button-scroll:active {
-            transform: scale(0.9) translateY(20px);
+            transform: scale(0.9) translateY(10px);
             transition: 0.3s;
         }
 
         .button-scroll:active .button-scroll__img circle {
-            stroke: #F0145A;
+            stroke: #E6E6F0;
         }
 
         .button-scroll:active .button-scroll__img path {
-            stroke: #F0145A;
+            stroke: #E6E6F0;
         }
     }
 
@@ -233,16 +229,12 @@
         }
 
         .call:hover {
-            @media (min-width: 768px) {
-                transform: rotateY(360deg);
-                transition: 1.5s;
-            }
+            transform: rotateY(360deg);
+            transition: 1.5s;
         }
 
         .call:hover .call__link {
-            @media (min-width: 768px) {
-                color: #B3B3BA;
-            }
+            color: #B3B3BA;
         }
 
         .call:active .call__link {
@@ -333,17 +325,13 @@
             }
 
             .logo__item:hover {
-                @media (min-width: 768px) {
-                    transform: rotateX(360deg);
-                    transition: 1.5s;
-                }
+                transform: rotateX(360deg);
+                transition: 1.5s;
             }
 
             .logo__item--mod:hover {
-                @media (min-width: 768px) {
-                    transform: rotateY(360deg);
-                    transition: 1.5s;
-                }
+                transform: rotateY(360deg);
+                transition: 1.5s;
             }
         }
 
@@ -368,7 +356,6 @@
         width: 100%;
         position: absolute;
         display: flex;
-        // display: none;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 45px;
@@ -511,14 +498,6 @@
                             -webkit-transition: width .3s ease;
                         }
                     }
-
-                    // .nav__link--mod {
-                    //     color: #F0145A;
-
-                    //     @media (min-width: 768px) {
-                    //         color: #FFF;
-                    //     }
-                    // }
                 }
 
                 .nav__item:hover .nav__line {
