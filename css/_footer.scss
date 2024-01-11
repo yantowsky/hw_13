@@ -148,5 +148,9 @@
         .policy__text {
             color: #B3B3BA;
         }
+
+        .policy__text:hover {
+            cursor: pointer;
+        }
     }
 }

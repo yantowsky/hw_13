@@ -236,3 +236,20 @@ function getClickDot(dot, team) {
 getClickDot(oneDot, oneTeam);
 getClickDot(twoDot, twoTeam);
 getClickDot(threeDot, threeTeam);
+
+let headerElement = document.getElementById("header");
+console.log(headerElement);
+let footerElement = document.getElementById("footer");
+console.log(footerElement);
+let scrollDown = document.querySelector(".button-scroll");
+console.log(scrollDown);
+let scrollUp = document.querySelector(".policy__text");
+console.log(scrollUp);
+
+function getScrollAnchor() {
+    headerElement.scrollIntoView({ block: "center", behavior: "smooth" });
+    footerElement.scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
+scrollDown.addEventListener("click", getScrollAnchor);
+scrollUp.addEventListener("click", getScrollAnchor);
