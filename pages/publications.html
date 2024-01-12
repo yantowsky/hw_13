@@ -40,7 +40,7 @@
                 </svg>
             </div>
             <div class="contacts__item call">
-                <a href="tel:0800211927" target="_blank" class="call__link">
+                <a href="tel:0800211927" target="_blank" class="call__link call__link--mod">
                     0800 211 927
                 </a>
             </div>
@@ -53,14 +53,15 @@
             <div class="contacts__item social-network">
                 <svg class="social-network__img" xmlns="http://www.w3.org/2000/svg" width="24" height="25"
                     viewBox="0 0 24 25" fill="none">
-                    <a class="social-network__link" href="https://www.facebook.com/">
-                        <g clip-path="url(#clip0_119344_2805)">
+                    <a href="https://www.facebook.com/" class="social-network__link">
+
+                        <g clip-path="url(#clip0_130044_1146)">
                             <path
                                 d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                                fill="white" />
+                                fill="#B3B3BA" />
                         </g>
                         <defs>
-                            <clipPath id="clip0_119344_2805">
+                            <clipPath id="clip0_130044_1146">
                                 <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
                             </clipPath>
                         </defs>
@@ -68,7 +69,7 @@
                 </svg>
             </div>
         </div>
-        <div class="logotype">
+        <div class="logotype logotype--mod">
             <div class="logotype__item logo">
                 <div class="logo__item">
                     <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" width="70" height="25" viewBox="0 0 70 25"
@@ -124,9 +125,9 @@
                 </div>
             </div>
             <div class="logotype__item slash">
-                <svg class="slash__img" xmlns="http://www.w3.org/2000/svg" width="12" height="26" viewBox="0 0 12 26"
+                <svg class="slash__img" xmlns="http://www.w3.org/2000/svg" width="21" height="47" viewBox="0 0 21 47"
                     fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72827 0H11.9505L3.55574 26H0.333496L8.72827 0Z"
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"
                         fill="#F0145A" />
                 </svg>
             </div>
@@ -137,7 +138,7 @@
             </div>
         </div>
         <div class="menu" id="menu-header">
-            <div class="menu__item button-burger" id="button-burger">
+            <div class="menu__item button-burger button-burger--mod" id="button-burger">
                 <svg class="button-burger__img" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     viewBox="0 0 32 32" fill="none">
                     <path d="M7 10H25" stroke="#323264" stroke-width="2" />
@@ -153,7 +154,7 @@
                         <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
                     </svg>
                 </div>
-                <ul class="nav">
+                <ul class="nav nav--mod">
                     <li class="nav__item">
                         <a class="nav__link" href="#">
                             about us
@@ -163,7 +164,7 @@
                         </div>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link nav__link--mod" href="#">
+                        <a class="nav__link" href="#">
                             services
                         </a>
                         <div class="nav__line">
@@ -178,11 +179,11 @@
 
                         </div>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">
+                    <li class="nav__item nav__item--mod">
+                        <a class="nav__link nav__link--mod" href="#">
                             publications
                         </a>
-                        <div class="nav__line">
+                        <div class="nav__line nav__line--mod">
 
                         </div>
                     </li>
@@ -198,13 +199,13 @@
             </div>
         </div>
     </header>
-    <div class="publications">
+    <div class="publications publications--mod">
         <div class="publications__heading">
             <div class="publications__switch switch">
-                <div class="switch__item">
+                <div class="switch__item" id="news">
                     news
                 </div>
-                <div class="switch__item">
+                <div class="switch__item" id="articles">
                     articles
                 </div>
             </div>
@@ -295,8 +296,6 @@
                 </div>
             </div>
             <div class="publications__item publications__item--option">
-                <!-- <div class="publications__cover publications__cover--option">
-                </div> -->
                 <div class="publications__info">
                     <h4 class="publications__subtitle">
                         Currency control is dead, long live currency control!
@@ -311,11 +310,13 @@
                 </div>
             </div>
         </div>
-        <div class="publications__button">
-            More publications
+        <div class="publications__button button">
+            <a href="#" class="button__link">
+                More publications
+            </a>
         </div>
     </div>
-    <footer class="footer" id="footer">
+    <footer class="footer footer--mod" id="footer">
         <div class="footer__item contacts">
             <div class="contacts__wrap">
                 <div class="contacts__item address">
@@ -381,7 +382,7 @@
             </span>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/publications.js"></script>
 </body>
 
 </html>

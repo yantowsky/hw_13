@@ -418,7 +418,6 @@
 
             @media (min-width: 768px) {
                 display: flex;
-                // !important
                 margin-top: 0;
                 padding: 0;
                 background: none;
@@ -1372,13 +1371,13 @@
             }
         }
 
-        .publications__item--mod {
-            grid-area: A;
-        }
+        // .publications__item--mod {
+        //     grid-area: A;
+        // }
 
-        .publications__item--spec {
-            grid-area: B;
-        }
+        // .publications__item--spec {
+        //     grid-area: B;
+        // }
 
         .publications__item--add {
             grid-area: C;

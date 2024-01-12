@@ -1,0 +1,222 @@
+.header {
+    .contacts--mod {
+        background: #F5F5FA;
+
+        @media (min-width: 768px) {
+            background: #FFF;
+        }
+
+        .address {
+            .address__link:hover {
+                color: #323264;
+            }
+        }
+
+        .call {
+            .call__link--mod {
+                color: #B3B3BA;
+            }
+        }
+    }
+
+    .logotype--mod {
+        background: #FFF;
+
+        .slash {
+            display: flex;
+            z-index: 3;
+
+            .slash__img {
+                width: fit-content;
+                height: 26px;
+
+                @media (min-width: 768px) {
+                    height: 47px;
+                }
+            }
+        }
+
+        .section-menu {
+            display: flex;
+            z-index: 4;
+
+            @media (min-width: 768px) {
+                font-size: 2.25rem;
+            }
+
+            .section-menu__text {
+                color: #323264;
+            }
+
+            .section-menu__text:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu {
+        .button-burger--mod:active {
+            background: #E6E6F0;
+        }
+
+        .popup-nav {
+            .nav--mod {
+                .nav__item {
+                    .nav__link {
+                        color: #24A3FF;
+                    }
+
+                    .nav__link--mod {
+                        color: #F0145A;
+                    }
+
+                    .nav__link--mod:hover {
+                        cursor: default;
+                    }
+
+                    .nav__line {
+                        @media (min-width: 768px) {
+                            background: #24A3FF;
+                        }
+                    }
+
+                    .nav__line--mod {
+                        background: #F0145A;
+
+                        @media (min-width: 768px) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .nav__item--mod:active {
+                    background: #F5F5FA;
+                }
+            }
+        }
+    }
+}
+
+.publications--mod {
+    margin-top: 102px;
+
+    @media (min-width: 768px) {
+        margin-top: 280px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 176px;
+    }
+
+    .publications__heading {
+        .switch {
+            margin: 0 auto;
+            padding: 2px;
+            background: #E6E6F0;
+            border-radius: 12px;
+            gap: 2px;
+
+            .switch__item {
+                padding: 8px 30px 10px;
+                color: #323264;
+                font-weight: 700;
+                border-radius: 10px;
+            }
+
+            #news {
+                background: #FFF;
+            }
+        }
+    }
+
+    .publications__body {
+        @media (min-width: 768px) {
+            grid-template-areas:
+                "A B"
+                "C D"
+                "E F";
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-areas:
+                "A B C"
+                "D E F";
+        }
+
+        .publications__item--improv {
+            .publications__cover--improv {
+                background: url("../images/publications/lang_and_law.png") no-repeat center center;
+                background-size: cover;
+            }
+        }
+
+        .publications__item--change {
+            .publications__cover--change {
+                background: url("../images/publications/kindergarten_and_school.png") no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+
+    .publications__button {
+        margin: 0 auto;
+        padding: 18px 9.525%;
+        border-radius: 12px;
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+        font-weight: 700;
+
+        @media (min-width: 768px) {
+            padding: 18px 4.63%;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 18px 3.32%;
+        }
+
+        @media (min-width: 1440px) {
+            padding: 18px 2.273%;
+        }
+
+        @media (min-width: 1920px) {
+            padding: 18px 1.875%;
+        }
+
+        .button__link {
+            color: #FFF;
+        }
+    }
+
+    .publications__button:hover {
+        background: #0085FF;
+        cursor: pointer;
+    }
+
+    .publications__button:active {
+        background: #006CCF;
+    }
+}
+
+.footer--mod {
+    .contacts {
+        @media (min-width: 768px) {
+            padding: 30px 19.136% 0;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 30px 0 0;
+        }
+    }
+
+    .policy {
+        @media (min-width: 768px) {
+            position: static;
+            padding-top: 0;
+        }
+
+        @media (min-width: 1024px) {
+            position: absolute;
+            padding-top: 32px;
+        }
+    }
+}

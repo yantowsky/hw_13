@@ -1520,12 +1520,6 @@ body {
   font-size: 0.875rem;
   line-height: 22px;
 }
-.publications .publications__body .publications__item--mod {
-  grid-area: A;
-}
-.publications .publications__body .publications__item--spec {
-  grid-area: B;
-}
 .publications .publications__body .publications__item--add {
   grid-area: C;
 }
@@ -1691,4 +1685,188 @@ body {
 }
 .footer .policy .policy__text:hover {
   cursor: pointer;
+}
+
+.header .contacts--mod {
+  background: #F5F5FA;
+}
+@media (min-width: 768px) {
+  .header .contacts--mod {
+    background: #FFF;
+  }
+}
+.header .contacts--mod .address .address__link:hover {
+  color: #323264;
+}
+.header .contacts--mod .call .call__link--mod {
+  color: #B3B3BA;
+}
+.header .logotype--mod {
+  background: #FFF;
+}
+.header .logotype--mod .slash {
+  display: flex;
+  z-index: 3;
+}
+.header .logotype--mod .slash .slash__img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 26px;
+}
+@media (min-width: 768px) {
+  .header .logotype--mod .slash .slash__img {
+    height: 47px;
+  }
+}
+.header .logotype--mod .section-menu {
+  display: flex;
+  z-index: 4;
+}
+@media (min-width: 768px) {
+  .header .logotype--mod .section-menu {
+    font-size: 2.25rem;
+  }
+}
+.header .logotype--mod .section-menu .section-menu__text {
+  color: #323264;
+}
+.header .logotype--mod .section-menu .section-menu__text:hover {
+  cursor: pointer;
+}
+.header .menu .button-burger--mod:active {
+  background: #E6E6F0;
+}
+.header .menu .popup-nav .nav--mod .nav__item .nav__link {
+  color: #24A3FF;
+}
+.header .menu .popup-nav .nav--mod .nav__item .nav__link--mod {
+  color: #F0145A;
+}
+.header .menu .popup-nav .nav--mod .nav__item .nav__link--mod:hover {
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .header .menu .popup-nav .nav--mod .nav__item .nav__line {
+    background: #24A3FF;
+  }
+}
+.header .menu .popup-nav .nav--mod .nav__item .nav__line--mod {
+  background: #F0145A;
+}
+@media (min-width: 768px) {
+  .header .menu .popup-nav .nav--mod .nav__item .nav__line--mod {
+    width: 100%;
+  }
+}
+.header .menu .popup-nav .nav--mod .nav__item--mod:active {
+  background: #F5F5FA;
+}
+
+.publications--mod {
+  margin-top: 102px;
+}
+@media (min-width: 768px) {
+  .publications--mod {
+    margin-top: 280px;
+  }
+}
+@media (min-width: 1024px) {
+  .publications--mod {
+    margin-top: 176px;
+  }
+}
+.publications--mod .publications__heading .switch {
+  margin: 0 auto;
+  padding: 2px;
+  background: #E6E6F0;
+  border-radius: 12px;
+  gap: 2px;
+}
+.publications--mod .publications__heading .switch .switch__item {
+  padding: 8px 30px 10px;
+  color: #323264;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.publications--mod .publications__heading .switch #news {
+  background: #FFF;
+}
+@media (min-width: 768px) {
+  .publications--mod .publications__body {
+    grid-template-areas: "A B" "C D" "E F";
+  }
+}
+@media (min-width: 1024px) {
+  .publications--mod .publications__body {
+    grid-template-areas: "A B C" "D E F";
+  }
+}
+.publications--mod .publications__body .publications__item--improv .publications__cover--improv {
+  background: url("../images/publications/lang_and_law.png") no-repeat center center;
+  background-size: cover;
+}
+.publications--mod .publications__body .publications__item--change .publications__cover--change {
+  background: url("../images/publications/kindergarten_and_school.png") no-repeat center center;
+  background-size: cover;
+}
+.publications--mod .publications__button {
+  margin: 0 auto;
+  padding: 18px 9.525%;
+  border-radius: 12px;
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .publications--mod .publications__button {
+    padding: 18px 4.63%;
+  }
+}
+@media (min-width: 1024px) {
+  .publications--mod .publications__button {
+    padding: 18px 3.32%;
+  }
+}
+@media (min-width: 1440px) {
+  .publications--mod .publications__button {
+    padding: 18px 2.273%;
+  }
+}
+@media (min-width: 1920px) {
+  .publications--mod .publications__button {
+    padding: 18px 1.875%;
+  }
+}
+.publications--mod .publications__button .button__link {
+  color: #FFF;
+}
+.publications--mod .publications__button:hover {
+  background: #0085FF;
+  cursor: pointer;
+}
+.publications--mod .publications__button:active {
+  background: #006CCF;
+}
+
+@media (min-width: 768px) {
+  .footer--mod .contacts {
+    padding: 30px 19.136% 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footer--mod .contacts {
+    padding: 30px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer--mod .policy {
+    position: static;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footer--mod .policy {
+    position: absolute;
+    padding-top: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
