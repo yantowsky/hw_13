@@ -1371,13 +1371,13 @@
             }
         }
 
-        // .publications__item--mod {
-        //     grid-area: A;
-        // }
+        .publications__item--mod {
+            grid-area: A;
+        }
 
-        // .publications__item--spec {
-        //     grid-area: B;
-        // }
+        .publications__item--spec {
+            grid-area: B;
+        }
 
         .publications__item--add {
             grid-area: C;
@@ -1435,7 +1435,6 @@
         flex-direction: column;
         gap: 21px;
         border-top: 2px solid #E6E6F0;
-
 
         .contacts__wrap {
             display: flex;

@@ -121,15 +121,14 @@
                 color: #323264;
                 font-weight: 700;
                 border-radius: 10px;
-            }
-
-            #news {
-                background: #FFF;
+                transition: 0.5s;
             }
         }
     }
 
     .publications__body {
+        transition: 0.5s;
+
         @media (min-width: 768px) {
             grid-template-areas:
                 "A B"
@@ -155,6 +154,18 @@
                 background: url("../images/publications/kindergarten_and_school.png") no-repeat center center;
                 background-size: cover;
             }
+        }
+
+        .publications__item--improv {
+            grid-area: D;
+        }
+
+        .publications__item--change {
+            grid-area: E;
+        }
+
+        .publications__item--option {
+            grid-area: F;
         }
     }
 

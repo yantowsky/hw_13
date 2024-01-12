@@ -93,3 +93,53 @@ function getScrollAnchor() {
 
 scrollDown.addEventListener("click", getScrollAnchor);
 scrollUp.addEventListener("click", getScrollAnchor);
+
+let newsSwitch = document.getElementById("news");
+console.log(newsSwitch);
+let articlesSwitch = document.getElementById("articles");
+console.log(articlesSwitch);
+let publicationsBlock = document.querySelector(".publications__body");
+console.log(publicationsBlock);
+
+newsSwitch.style.background = "#FFF";
+newsSwitch.style.cursor = "default";
+articlesSwitch.style.cursor = "pointer";
+
+function getClickSwitch(on) {
+    on.onclick = function () {
+        on.style.background = "#FFF";
+        on.style.cursor = "default";
+        if (on == newsSwitch) {
+            articlesSwitch.style.background = "none";
+            articlesSwitch.style.cursor = "pointer";
+            publicationsBlock.style.WebkitFlexDirection = "column";
+            (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1024) ? publicationsBlock.style.gridTemplateAreas = '"A B" "C D" "E F"' : publicationsBlock.style.gridTemplateAreas = '"A B C" "D E F"';
+        } else if (on == articlesSwitch) {
+            newsSwitch.style.background = "none";
+            newsSwitch.style.cursor = "pointer";
+            publicationsBlock.style.WebkitFlexDirection = "column-reverse";
+            (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1024) ? publicationsBlock.style.gridTemplateAreas = '"F E" "D C" "B A"' : publicationsBlock.style.gridTemplateAreas = '"F E D" "C B A"';
+        }
+    }
+    on.onmouseover = function () {
+        (on.style.cursor == "default" || on.style.background == "#FFF") ? on.style.background = "#FFF" : on.style.background = "#F5F5FA";
+    }
+    on.onmouseout = function () {
+        (on.style.cursor == "default" || on.style.background == "#FFF") ? on.style.background == "#FFF" : on.style.background = "none";
+    }
+}
+
+getClickSwitch(newsSwitch);
+getClickSwitch(articlesSwitch);
+
+window.addEventListener("resize", function () {
+    if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1024 && newsSwitch.style.background !== "none" && articlesSwitch.style.background !== "#FFF") {
+        publicationsBlock.style.gridTemplateAreas = '"A B" "C D" "E F"';
+    } else if (document.documentElement.clientWidth >= 1024 && newsSwitch.style.background !== "none" && articlesSwitch.style.background !== "#FFF") {
+        publicationsBlock.style.gridTemplateAreas = '"A B C" "D E F"';
+    } else if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1024 && newsSwitch.style.background !== "#FFF" && articlesSwitch.style.background !== "none") {
+        publicationsBlock.style.gridTemplateAreas = '"F E" "D C" "B A"';
+    } else if (document.documentElement.clientWidth >= 1024 && newsSwitch.style.background !== "#FFF" && articlesSwitch.style.background !== "none") {
+        publicationsBlock.style.gridTemplateAreas = '"F E D" "C B A"';
+    }
+});

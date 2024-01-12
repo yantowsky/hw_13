@@ -1520,6 +1520,12 @@ body {
   font-size: 0.875rem;
   line-height: 22px;
 }
+.publications .publications__body .publications__item--mod {
+  grid-area: A;
+}
+.publications .publications__body .publications__item--spec {
+  grid-area: B;
+}
 .publications .publications__body .publications__item--add {
   grid-area: C;
 }
@@ -1787,9 +1793,10 @@ body {
   color: #323264;
   font-weight: 700;
   border-radius: 10px;
+  transition: 0.5s;
 }
-.publications--mod .publications__heading .switch #news {
-  background: #FFF;
+.publications--mod .publications__body {
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .publications--mod .publications__body {
@@ -1808,6 +1815,15 @@ body {
 .publications--mod .publications__body .publications__item--change .publications__cover--change {
   background: url("../images/publications/kindergarten_and_school.png") no-repeat center center;
   background-size: cover;
+}
+.publications--mod .publications__body .publications__item--improv {
+  grid-area: D;
+}
+.publications--mod .publications__body .publications__item--change {
+  grid-area: E;
+}
+.publications--mod .publications__body .publications__item--option {
+  grid-area: F;
 }
 .publications--mod .publications__button {
   margin: 0 auto;
