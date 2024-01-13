@@ -1077,15 +1077,15 @@ body {
   }
 }
 .team .team__body .team__item .team__photo--mod {
-  background: url("../images/team/alexander_alexandrovsky.svg") no-repeat center center;
+  background: url("../images/team/alexander_alexandrovsky.png") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__photo--spec {
-  background: url("../images/team/oksana_kobzar.svg") no-repeat center center;
+  background: url("../images/team/oksana_kobzar.png") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__photo--add {
-  background: url("../images/team/vladislav_melnik.svg") no-repeat center center;
+  background: url("../images/team/vladislav_melnik.png") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__info {
@@ -1960,15 +1960,15 @@ body {
   }
 }
 .team--mod .team__body .team__item .team__photo--improv {
-  background: url("../images/team/evgeny_patrikov.svg") no-repeat center center;
+  background: url("../images/team/evgeny_patrikov.png") no-repeat center center;
   background-size: cover;
 }
 .team--mod .team__body .team__item .team__photo--change {
-  background: url("../images/team/sergey_binn.svg") no-repeat center center;
+  background: url("../images/team/sergey_binn.png") no-repeat center center;
   background-size: cover;
 }
 .team--mod .team__body .team__item .team__photo--option {
-  background: url("../images/team/julia_wolk.svg") no-repeat center center;
+  background: url("../images/team/julia_wolk.png") no-repeat center center;
   background-size: cover;
 }
 .team--mod .team__body .team__item .team__wrap {
