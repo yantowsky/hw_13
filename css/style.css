@@ -2005,6 +2005,11 @@ body {
 }
 
 .footer--spec .contacts {
-  padding-top: 0;
+  padding-top: 30px;
   border-top: none;
+}
+@media (min-width: 768px) {
+  .footer--spec .contacts {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
