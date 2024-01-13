@@ -1016,7 +1016,6 @@ body {
 
 .team {
   padding: 30px 8% 60px;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .team {
@@ -1078,21 +1077,21 @@ body {
   }
 }
 .team .team__body .team__item .team__photo--mod {
-  background: url("../images/team/Alexander_Alexandrovsky.svg") no-repeat center center;
+  background: url("../images/team/alexander_alexandrovsky.svg") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__photo--spec {
-  background: url("../images/team/Oksana_Kobzar.svg") no-repeat center center;
+  background: url("../images/team/oksana_kobzar.svg") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__photo--add {
-  background: url("../images/team/Vladislav_Melnik.svg") no-repeat center center;
+  background: url("../images/team/vladislav_melnik.svg") no-repeat center center;
   background-size: cover;
 }
 .team .team__body .team__item .team__info {
   display: flex;
   flex-direction: column;
-  padding: 30px 8%;
+  padding: 30px 9.525%;
 }
 @media (min-width: 768px) {
   .team .team__body .team__item .team__info {
@@ -1885,4 +1884,127 @@ body {
     position: absolute;
     padding-top: 32px;
   }
+}
+
+.team--mod {
+  margin-top: 102px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .team--mod {
+    margin-top: 220px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .team--mod {
+    margin-top: 116px;
+  }
+}
+@media (min-width: 1024px) {
+  .team--mod .team__title {
+    padding: 0 13.275%;
+  }
+}
+@media (min-width: 1440px) {
+  .team--mod .team__title {
+    padding: 0 9.092%;
+  }
+}
+@media (min-width: 1920px) {
+  .team--mod .team__title {
+    padding: 0 7.5%;
+  }
+}
+.team--mod .team__title .team__quote--improv,
+.team--mod .team__title .team__quote--add,
+.team--mod .team__title .team__quote--change,
+.team--mod .team__title .team__quote--spec,
+.team--mod .team__title .team__quote--option {
+  display: none;
+}
+.team--mod .team__body {
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .team--mod .team__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .team--mod .team__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.team--mod .team__body .team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.team--mod .team__body .team__item .team__photo {
+  height: 300px;
+  border-radius: 12px;
+}
+@media (min-width: 768px) {
+  .team--mod .team__body .team__item .team__photo {
+    width: 100%;
+    height: 400px;
+  }
+}
+.team--mod .team__body .team__item .team__photo--improv {
+  background: url("../images/team/evgeny_patrikov.svg") no-repeat center center;
+  background-size: cover;
+}
+.team--mod .team__body .team__item .team__photo--change {
+  background: url("../images/team/sergey_binn.svg") no-repeat center center;
+  background-size: cover;
+}
+.team--mod .team__body .team__item .team__photo--option {
+  background: url("../images/team/julia_wolk.svg") no-repeat center center;
+  background-size: cover;
+}
+.team--mod .team__body .team__item .team__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team--mod .team__body .team__item .team__wrap .team__info {
+  padding: 0;
+}
+.team--mod .team__body .team__item .team__wrap .team__info .team__name {
+  color: #323264;
+}
+.team--mod .team__body .team__item .team__wrap .team__info .team__name:hover {
+  color: #F0145A;
+}
+.team--mod .team__body .team__item .team__wrap .btn-scroll-up .btn-scroll-up__img {
+  transition: 0.5s;
+}
+.team--mod .team__body .team__item .team__wrap .btn-scroll-up .btn-scroll-up__img:hover circle {
+  fill: #EDEDF7;
+}
+.team--mod .team__body .team__item .team__wrap .btn-scroll-up .btn-scroll-up__img:hover path {
+  stroke: #F0145A;
+}
+.team--mod .team__body .team__item .team__wrap .btn-scroll-up .btn-scroll-up__img:hover {
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.team--mod .team__body .team__item .team__wrap .btn-scroll-up .btn-scroll-up__img:active {
+  transform: scale(0.9) translateY(-10px) rotate(-90deg);
+  transition: 0.3s;
+}
+
+.footer--spec .contacts {
+  padding-top: 0;
+  border-top: none;
 }/*# sourceMappingURL=style.css.map */
