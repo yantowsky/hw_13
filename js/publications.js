@@ -76,7 +76,6 @@ getClickLang(uaButton);
 getClickLang(enButton);
 getClickLang(ruButton);
 
-
 let headerElement = document.getElementById("header");
 console.log(headerElement);
 let footerElement = document.getElementById("footer");
