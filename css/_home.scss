@@ -271,10 +271,10 @@
         position: absolute;
         display: flex;
         align-items: flex-start;
+        justify-content: flex-start;
         gap: 4px;
 
         @media (min-width: 768px) {
-            align-items: flex-start;
             margin-top: 105px;
             padding: 0 7.813%;
         }
